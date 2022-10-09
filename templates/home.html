@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <form action="results" class="form" method="post">
+                <h1>Dojo Survey</h1>
+                <div>
+                    <label for="fullname">Name:</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div>
+                    <label for="dojolocation">Dojo Location:</label>
+                    <select name="dojolocation" id="dojolocation">
+                        <option value="">--Select Option--</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Online">Online</option>
+                        <option value="Burbank">Burbank</option>
+                        <option value="Bellevue">Bellevue</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="language">Favorite Language:</label>
+                    <select name="language" id="language">
+                        <option value="">--Select a language--</option>
+                        <option value="php">php</option>
+                        <option value="python">python</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
